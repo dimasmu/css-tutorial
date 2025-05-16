@@ -1,0 +1,33 @@
+/* Task 5: Set default font for entire page */
+body {
+    font-family: sans-serif;
+}
+
+/* Task 1: Style h1 with color and sans-serif */
+h1 {
+    color: purple;
+    font-family: sans-serif;
+}
+
+/* Task 2: Style all code tags (base style) */
+code {
+    font-family: monospace;
+    color: red;
+}
+
+/* Task 7: Style all li inside ol */
+ol > li {
+    background-color: black;
+    color: white;
+}
+
+/* Task 6: Reset first li back to normal */
+ol > li:first-child {
+    background-color: transparent;
+    color: inherit;
+}
+
+/* Task 3: Style code elements in second li using class selector (most specific rule) */
+.second-li {
+    color: green;
+}
