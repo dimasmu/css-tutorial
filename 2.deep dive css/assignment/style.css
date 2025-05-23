@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex; /* position boxes side by side */
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh; /* full viewport height for body */
+}
+
+.box {
+    text-align: center;
+    padding: 10px 20px 15px 5px; /* different padding for top, right, bottom, left */
+    margin: 10px 15px 5px 20px; /* different margin for top, right, bottom, left */
+    border: 2px solid green;
+    background-color: blueviolet;
+    color: white;
+    width: 50%;
+    height: 300px;
+    box-sizing: border-box; /* include padding and border in width/height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-box {
+    height: 100vh; /* 100% of window height */
+    width: 50%;
+}
+
+.first-box.hide {
+    display: none; /* hide first box */
+}
+
+.box:last-child:hover {
+    background-color: darkviolet; /* hover effect on last box */
+    cursor: pointer;
+}
+
+.box h1 {
+    margin: 0;
+}
