@@ -1,3 +1,5 @@
+/* Check compatibility of selector https://caniuse.com */
+
 body {
     font-family: sans-serif;
 }
@@ -14,12 +16,21 @@ a {
     margin: 10px;
 }
 
+/* override border from selector highlighted */
 .main-section {
     height: 800px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc !important;
     padding: 16px;
 }
 
 a.active {
     color: #521751;
+}
+
+.highlighted {
+    border: 2px solid #fa923f;
+}
+
+a:not(.active) {
+    color: blue;
 }

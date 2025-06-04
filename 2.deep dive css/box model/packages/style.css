@@ -1,0 +1,41 @@
+.plan {
+    padding: 12px;
+    margin: 16px 0;
+    border: 2px solid black;
+    width: 70%;
+    background-color: #CEF8D7;
+}
+
+.plan.premium--plan {
+    color: white;
+    background-color: #194728;
+    clear: both;
+    /* untuk membuat posisi box rapih setelah ada property float diatas */
+}
+
+.plan__title {}
+
+.plan__title.grey {
+    color: grey;
+}
+
+.plan__description {
+    padding: 12px;
+    border: 1px solid black;
+}
+
+.plan__description.premium--plan--description {
+    color: black;
+    background-color: white;
+}
+
+.plan.free--plan {
+    float: right;
+    text-align: right;
+}
+
+.plan:hover,
+.plan:active {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-color: #ff5454;
+}
